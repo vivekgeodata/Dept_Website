@@ -1,0 +1,5 @@
+<svg viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 30 15 C 45 15 45 45 30 45 C 15 45 15 15 30 15 Z" fill="#16a34a"/>
+  <circle cx="30" cy="38" r="3" fill="#ffffff" />
+  <text x="60" y="42" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="30" fill="#0f172a" letter-spacing="0.5">OIL INDIA</text>
+</svg>
