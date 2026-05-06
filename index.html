@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Dept. of Marine Geology & Geophysics | CUSAT</title>
-    <link rel="icon"
-        href="https://scontent.fcok10-1.fna.fbcdn.net/v/t39.30808-6/305392661_498213035642874_6323304493351334148_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=XRIEnlDWWMAQ7kNvwEW1U7j&_nc_oc=AdpWpEej1ce_P6Hze1a5YBJDPBy-dZ2U-mxINGC3sZO37FBxmM1L3yzRAbUrTVY6YOeBcuztwHnKJNtzWjV9xEu_&_nc_zt=23&_nc_ht=scontent.fcok10-1.fna&_nc_gid=o1hQ732x_rAY0ukGLSoMig&_nc_ss=7a30f&oh=00_Afyb7iaDS6nHIxnYIXf8YxPXwGokm6rCAIZiouku9uM2zw&oe=69C6AFD1"
-        type="image/jpeg">
-    <link rel="apple-touch-icon"
-        href="https://scontent.fcok10-1.fna.fbcdn.net/v/t39.30808-6/305392661_498213035642874_6323304493351334148_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=XRIEnlDWWMAQ7kNvwEW1U7j&_nc_oc=AdpWpEej1ce_P6Hze1a5YBJDPBy-dZ2U-mxINGC3sZO37FBxmM1L3yzRAbUrTVY6YOeBcuztwHnKJNtzWjV9xEu_&_nc_zt=23&_nc_ht=scontent.fcok10-1.fna&_nc_gid=o1hQ732x_rAY0ukGLSoMig&_nc_ss=7a30f&oh=00_Afyb7iaDS6nHIxnYIXf8YxPXwGokm6rCAIZiouku9uM2zw&oe=69C6AFD1">
+    <link rel="icon" href="assets/Logo/Dept_logo.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="assets/Logo/Dept_logo.jpg">
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -287,12 +284,12 @@
         @keyframes magmaPulseMin {
             0% {
                 opacity: 0.8;
-                filter: drop-shadow(0 0 5px #ff4500);
+                filter: drop-shadow(0 0 8px #ff4500) brightness(1.2);
             }
 
             100% {
                 opacity: 1;
-                filter: drop-shadow(0 0 15px #ff4500);
+                filter: drop-shadow(0 0 25px #ff4500) brightness(1.5);
             }
         }
 
@@ -303,12 +300,12 @@
             }
 
             30% {
-                opacity: 0.6;
-                filter: drop-shadow(0 0 3px rgba(255, 100, 0, 0.8));
+                opacity: 0.8;
+                filter: drop-shadow(0 0 8px rgba(255, 150, 0, 1));
             }
 
             100% {
-                transform: translateY(-120px) scale(1.5);
+                transform: translateY(-150px) scale(2.5);
                 opacity: 0;
             }
         }
@@ -330,13 +327,14 @@
         .vent-smoke {
             position: absolute;
             bottom: 0;
-            width: 14px;
-            height: 14px;
-            background: radial-gradient(circle, rgba(255, 200, 50, 0.5) 0%, transparent 60%);
-            border: 1px solid rgba(255, 100, 0, 0.6);
+            width: 18px;
+            height: 18px;
+            background: radial-gradient(circle, rgba(255, 255, 200, 0.8) 0%, rgba(255, 100, 0, 0.6) 40%, transparent 70%);
+            border: 1px solid rgba(255, 200, 0, 0.8);
             border-radius: 50%;
-            animation: ventRise 4s infinite ease-in;
+            animation: ventRise 3s infinite ease-in;
             mix-blend-mode: screen;
+            filter: blur(1px);
         }
 
         @keyframes slideTransL {
@@ -970,12 +968,12 @@
         <div class="nv-c">
             <div class="lg-c">
                 <a href="https://cusat.ac.in" target="_blank" title="CUSAT Official Website">
-                    <img src="assets/logo/CUSAT logo.png" alt="CUSAT Logo" class="lg-u">
+                    <img src="assets/Logo/CUSAT_logo.png" alt="CUSAT Logo" class="lg-u">
                 </a>
                 <div class="lg-sep"></div>
                 <a href="#" onclick="sh('home')" title="Department Home"
                     style="text-decoration:none; display:flex; align-items:center; gap:0.8rem;">
-                    <img src="assets/logo/Dept logo.jpg" alt="MGG Logo" class="lg-d">
+                    <img src="assets/Logo/Dept_logo.jpg" alt="MGG Logo" class="lg-d">
                 </a>
             </div>
             <div class="nv-r">
@@ -1369,13 +1367,16 @@
                 <path d="M25,50 Q10,30 5,20 Q20,25 25,10 Q30,25 45,20 Q40,30 25,50" />
             </svg>
 
-            <!-- Hydrothermal Vent Smoke on Right Peak -->
+            <!-- Hydrothermal Vent Smoke on Right Peak (Enhanced Hotness) -->
             <div class="vent" style="position:absolute; right:80px; bottom:130px; z-index:5;">
-                <div class="vent-smoke" style="animation-delay:0s"></div>
-                <div class="vent-smoke" style="animation-delay:0.7s; left:-20px;"></div>
-                <div class="vent-smoke" style="animation-delay:1.5s; left:-10px;"></div>
-                <div class="vent-smoke" style="animation-delay:2.2s; left:-5px;"></div>
-                <div class="vent-smoke" style="animation-delay:3s; left:-25px;"></div>
+                <div class="vent-smoke" style="animation-delay:0s; width:22px; height:22px;"></div>
+                <div class="vent-smoke" style="animation-delay:0.4s; left:-25px; width:16px; height:16px;"></div>
+                <div class="vent-smoke" style="animation-delay:0.8s; left:-10px; width:20px; height:20px;"></div>
+                <div class="vent-smoke" style="animation-delay:1.2s; left:-35px; width:14px; height:14px;"></div>
+                <div class="vent-smoke" style="animation-delay:1.6s; left:15px; width:18px; height:18px;"></div>
+                <div class="vent-smoke" style="animation-delay:2s; left:-5px; width:24px; height:24px;"></div>
+                <div class="vent-smoke" style="animation-delay:2.4s; left:-20px; width:12px; height:12px;"></div>
+                <div class="vent-smoke" style="animation-delay:2.8s; left:10px; width:20px; height:20px;"></div>
             </div>
 
             <!-- Deep Sea Organisms -->
