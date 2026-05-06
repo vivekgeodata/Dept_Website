@@ -507,7 +507,7 @@
         .nv-l a {
             color: #ffffff;
             text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -604,7 +604,7 @@
         }
 
         .hr h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 800;
             text-transform: capitalize;
             letter-spacing: -0.5px;
@@ -617,7 +617,7 @@
 
         .hr p {
             color: #e2e8f0;
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             line-height: 1.7;
             font-weight: 400;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -922,6 +922,11 @@
                 border-bottom: 3px solid var(--a);
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
                 z-index: 1001;
+                font-size: 0.8rem;
+            }
+
+            .nv-c {
+                min-height: 70px;
             }
 
             .nv-l.act {
@@ -933,11 +938,11 @@
             }
 
             .hr h1 {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
             }
 
             .sh-h {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
 
             .gl {
@@ -958,6 +963,36 @@
             .hr-img {
                 height: 300px;
                 order: -1;
+            }
+
+            /* Mobile Seafloor Spreading Fix */
+            .sfs-container {
+                height: 30px;
+            }
+            .sfs-plate {
+                -webkit-mask-size: 60px 30px;
+                mask-size: 60px 30px;
+            }
+            .sfs-gap {
+                width: 50px;
+                height: 30px;
+                -webkit-mask-size: 60px 30px;
+                mask-size: 60px 30px;
+            }
+            .roc {
+                transform: scale(0.6);
+                transform-origin: bottom;
+            }
+            .roc[style*="left:0"] {
+                left: -50px !important;
+            }
+            .roc[style*="right:0"] {
+                right: -50px !important;
+            }
+            .vent {
+                right: 20px !important;
+                bottom: 80px !important;
+                transform: scale(0.7);
             }
         }
     </style>
@@ -1437,8 +1472,8 @@
         <div class="ct" style="position:relative; z-index:10;">
             <div class="f-g">
                 <div>
-                    <h3 style="color:#ffffff;margin-bottom:2rem;letter-spacing:1px">LAKESIDE CAMPUS</h3>
-                    <p style="opacity:0.9;font-size:1.05rem;line-height:1.9">
+                    <h3 style="color:#ffffff;margin-bottom:1.5rem;letter-spacing:1px;font-size:1.2rem">LAKESIDE CAMPUS</h3>
+                    <p style="opacity:0.9;font-size:0.95rem;line-height:1.7">
                         Department of Marine Geology & Geophysics<br>
                         School of Marine Sciences, CUSAT<br>
                         Fine Arts Avenue, Kochi - 682016<br>
@@ -1446,7 +1481,7 @@
                     </p>
                 </div>
                 <div>
-                    <h3 style="color:#ffffff;margin-bottom:2rem;letter-spacing:1px">GET IN TOUCH</h3>
+                    <h3 style="color:#ffffff;margin-bottom:1.5rem;letter-spacing:1px;font-size:1.2rem">GET IN TOUCH</h3>
                     <p style="opacity:0.9"><i class="fas fa-envelope"></i> marinegeo@cusat.ac.in</p>
                     <p style="opacity:0.9;margin-top:0.75rem"><i class="fas fa-phone"></i> +91-484-2366478</p>
                     <div style="margin-top:2.5rem;display:flex;gap:1.5rem">
